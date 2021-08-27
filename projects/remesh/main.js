@@ -15,7 +15,9 @@ let CAMERA, CONTROLS, SCENE, RENDERER;
 let MESH_IN, MESH_OUT;
 let DIHEDRAL_ANGLE = 20, EDGE_ANGLE = 20;
 let TARGET_EDGE_LENGTH = 1.0;
-let NUM_ITERS = 10;
+let NUM_ITERS = 3;
+let GUI_TARGET_EDGE_LENGTH;
+let FEATURE_COLLECTED = false;
 
 
 const HEAP_MAP = {
@@ -54,7 +56,7 @@ function initGUI() {
     menuright.addButton('Update features', update_features);
 
     menuright.addTitle('Remeshing');
-    menuright.addNumberBox('Edge length', TARGET_EDGE_LENGTH, setEdgeLength);
+    GUI_TARGET_EDGE_LENGTH = menuright.addNumberBox('Edge length', TARGET_EDGE_LENGTH, setEdgeLength);
     menuright.addNumberBox('Iterations', NUM_ITERS, setNumIters);
     menuright.addButton('Remesh', remesh);
 
@@ -193,7 +195,12 @@ function loadOBJTriMesh() {
     }
 
     // init mesh
+    // reset everything
     SCENE.remove(MESH_IN);
+    SCENE.remove(MESH_OUT);
+    MESH_IN = undefined;
+    MESH_OUT = undefined;
+    FEATURE_COLLECTED = false;
 
     var geom = new THREE.BufferGeometry();
     geom.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
@@ -228,6 +235,8 @@ function loadOBJTriMesh() {
 
     Module.ccall("create_remesher", null, [], []);
     ccallArrays("set_mesh", null, null, null, ["array", "array"], [vertices, findices], ["HEAPF64", "HEAP32"]);
+    let res = Module.ccall("average_edge_length", null, [], []);
+    GUI_TARGET_EDGE_LENGTH.setValue(res);
 }
 
 function onWindowResize() {
@@ -299,7 +308,10 @@ function setNumIters(n) {
 }
 
 function remesh() {
-    Module.ccall("collect_features", null, [], []);
+    if (!FEATURE_COLLECTED) {
+        Module.ccall("collect_features", null, [], []);
+        FEATURE_COLLECTED = true;
+    }
 
     Module.ccall("remesh", null, ["number", "number"], [TARGET_EDGE_LENGTH, NUM_ITERS]);
     let numV = Module.ccall("get_mesh_num_v", null, [], []);
@@ -318,6 +330,7 @@ function remesh() {
     }
 
     SCENE.remove(MESH_OUT);
+    MESH_OUT = undefined;
 
     var geom = new THREE.BufferGeometry();
     geom.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
