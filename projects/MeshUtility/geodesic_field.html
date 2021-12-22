@@ -1,0 +1,744 @@
+<html>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "82d246021332449b942bb89f7e0240f7": {
+      "model_name": "RendererModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "_antialias": true,
+        "_dom_classes": [],
+        "_height": 600,
+        "_width": 600,
+        "camera": "IPY_MODEL_e9dd9253d8fc458a835a9519ce5632c4",
+        "clippingPlanes": [],
+        "controls": [
+          "IPY_MODEL_f2901915a8634068b04737323719af16"
+        ],
+        "layout": "IPY_MODEL_75403390f3bc4c8fb3ca35f639530a28",
+        "scene": "IPY_MODEL_f90a4a087f1f49b28dff1fd5ecb4dad3",
+        "shadowMap": "IPY_MODEL_bb0cd0ca7b894bd3bd6bbc682c04ab6b"
+      }
+    },
+    "e9dd9253d8fc458a835a9519ce5632c4": {
+      "model_name": "PerspectiveCameraModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [
+          "IPY_MODEL_dc45e3f71bd54463aa280c417ed84a4e"
+        ],
+        "fov": 30.0,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorldInverse": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          5.108925379827852
+        ],
+        "projectionMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "dc45e3f71bd54463aa280c417ed84a4e": {
+      "model_name": "DirectionalLightModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [],
+        "color": "white",
+        "intensity": 0.6,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          5.108925379827852
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shadow": "uninitialized",
+        "target": "uninitialized",
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "f2901915a8634068b04737323719af16": {
+      "model_name": "OrbitControlsModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "controlling": "IPY_MODEL_e9dd9253d8fc458a835a9519ce5632c4",
+        "target": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maxAzimuthAngle": "inf",
+        "maxDistance": "inf",
+        "maxZoom": "inf",
+        "minAzimuthAngle": "-inf"
+      }
+    },
+    "75403390f3bc4c8fb3ca35f639530a28": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "f90a4a087f1f49b28dff1fd5ecb4dad3": {
+      "model_name": "SceneModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [
+          "IPY_MODEL_e9dd9253d8fc458a835a9519ce5632c4",
+          "IPY_MODEL_0f0646cd3d4d4b069ef42193be89da4f",
+          "IPY_MODEL_85e59eebe34d446faa55cc2b65246c72"
+        ],
+        "fog": null,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "overrideMaterial": null,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "0f0646cd3d4d4b069ef42193be89da4f": {
+      "model_name": "AmbientLightModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [],
+        "intensity": 0.5,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "85e59eebe34d446faa55cc2b65246c72": {
+      "model_name": "MeshModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [],
+        "geometry": "IPY_MODEL_75fc433796fe410288383c7715bc8f45",
+        "material": "IPY_MODEL_aa5fbd6ec0654417bba851ede210150a",
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "morphTargetInfluences": [],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "75fc433796fe410288383c7715bc8f45": {
+      "model_name": "BufferGeometryModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "_ref_geometry": null,
+        "attributes": {
+          "color": "IPY_MODEL_63ac65895de74f10996f6164580af9e9",
+          "index": "IPY_MODEL_4cc970b2540f415486249c80b7ccaf26",
+          "position": "IPY_MODEL_d86562c6704f4067aa8a93d9897d02c9"
+        },
+        "index": null,
+        "morphAttributes": {},
+        "userData": {}
+      }
+    },
+    "63ac65895de74f10996f6164580af9e9": {
+      "model_name": "BufferAttributeModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "array": {
+          "shape": [
+            107,
+            3
+          ],
+          "dtype": "float32"
+        },
+        "normalized": true
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "array",
+            "buffer"
+          ],
+          "data": "wLSIPhO2nzsVqag+YTdMPm10xj4F/Q0/TWmNPsKiQj6havw+CHVBPsxi0j5haw4/NrAVPhvyAz/0iw4/rrctPiyb6T4O2w4/1QZ3PuLMlz5eKgo/qOJiP59yZD9yU8M93QwzP2H7XT++MTQ+0QVVPsr8Nz9pHPI+TtWNPoM1Tj23XcA+QGzBPimySj84gcE+LH2IPoS9aT5grAM/PgUgPv+v+j7l1A4/DRgEP8XGVD+9q5Y+MxVyP0daZj+cF+c9ZJAbPuQsAD8Gvg4/J8JGPhB0zD6COQ4/Ko2QPsR3wj1prNU+m8s9P1uaXz+FJhk+wLSIPhO2nzsVqag+gEV+P+j5Zz/1YxM+bouKPuc0Wz4pzgE/bhQpPhFS7z5U4g4/wCT1PVxVHj8JTgk/v+9PPiNqwj4Hzg0/YcUdPyNLWj/Akms+SwN3P6T+Zj/H1P09PBWQPvOSHz4dO/A+5j0+Pr1zND+0dfg+5j0+Pr1zND+0dfg+s+wJPl6cKD+lhAQ/mKIMPlmJKT92/AM/oDVvPhCuoD7zPQs/vk4KPnx7Cz/Y1A0/s+wJPl6cKD+lhAQ/o1nhPr2mTz86k64+3QwzP2H7XT++MTQ+ZAORPu9Z9z06lOE+gsgSPnTUBT9ZaQ4/Zp8HPgdeDT+Wkg0/AgwjP1ZGWz+i0V0+2LdTPhFXvj4TmQ0/7s2PPiehJD7RH/I+dR4JPwH2VT8/VpA+nfJ4PhWNlT4v3Ak/dR51Pn9PPD/wT+k+FJb4PWMmIT9iLwg/4Ls1P3dmXj+1US0+pp0qPiNr7T7j4A4/TmAqPvDbMD+DNf4+SWcAPoEGEz/mkAw/aVcRPqDFBj9tVQ4/Ci2LPodTVj6WIgE/Mv+QPqPp7D13St8+0QVVPsr8Nz9pHPI+C7O4PvA0ST+Oj8Y+VYdIP9IYYT8ragA+ZJYdPskhLj9rEQE/Gv04PhWPMz/p8/k+SiYXPu8AAz/Dmg4/huclPvHzLz/Wjf8+YTdMPm10xj4F/Q0/tDsUPkfjBD+Bew4/zqncPhb4Tj9NZbE+Z3v0PidKUj906qI+Brx8PnEEkT5uMwk/iq4LPlCKCj+Z8g0/B+31PfFFHz858gg/2LdTPhFXvj4TmQ0/MKECPpIjET898Qw/Mjn1PaeRGj8xmQo/zsL+PfD3Ez+JXAw/dAsdPsl2/j4Axw4/fLk/PpZZ1D7deQ4/P1TKPlInTD+lSrw+guSNPmmsPT7p0/o+fqyIPiWuPz/JkuE+LH2IPoS9aT5grAM/UkT+PmGNUz9y3Zw+toMhPhTM+D7x2Q4/tTeAPr1vjD5weQg/GY5XPm06uj5fXQ0/8zttPsreoj4+egs/tTeAPr1vjD5weQg/E35ZPl8ouD7ePA0/Q3EHPv+uJz+BCAU/RS9TPwN9Yj9MiNk9fqyIPiWuPz/JkuE+Zp8HPgdeDT+Wkg0/zqncPhb4Tj9NZbE+sHZYP4knYz+QMMw9gSIWPgFNLD+hSQI/mRFOPmVwxD425g0/aVcRPqDFBj9tVQ4/mlsBPjLkJD/IegY/E35ZPl8ouD7ePA0/5XwBPgEVEj9hwgw/Brx8PnEEkT5uMwk/MGhhPvW6OT8tte4+wLSIPhO2nzsVqag+wLSIPhO2nzsVqag+wLSIPhO2nzsVqag+wLSIPhO2nzsVqag+wLSIPhO2nzsVqag+wLSIPhO2nzsVqag+wLSIPhO2nzsVqag+"
+        }
+      ]
+    },
+    "4cc970b2540f415486249c80b7ccaf26": {
+      "model_name": "BufferAttributeModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "array": {
+          "shape": [
+            630
+          ],
+          "dtype": "uint32"
+        }
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "array",
+            "buffer"
+          ],
+          "data": "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"
+        }
+      ]
+    },
+    "d86562c6704f4067aa8a93d9897d02c9": {
+      "model_name": "BufferAttributeModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "array": {
+          "shape": [
+            107,
+            3
+          ],
+          "dtype": "float32"
+        }
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "array",
+            "buffer"
+          ],
+          "data": "xtoJvW9IQj634nk/6leyPhzenL5XdmE/zVkOv0JwUT8g/RE++4R9v7VWl72VjMU9Zo1Dv0oJxb5zHAW/6GMBvhiEeT9BiUi+Nkgwv477VT4R0TK/c4NYP2S+2r5vrae+9T8SPoSwe7+elN+9W6N2viQ1Fb8vpke/4W9Rv0iBDz+eS/I9+4R9PwWfGj6H2Y68z0iGPgty4jwBsXU/ezptv9uOpL5qb0K+lkJTP5L2BD9n/XG+TiqoPpgtS78DMAS/mkIPP7hTJj9hPAM/HCOCvpjg3b7JrVs/uYUzv02j6z7pwgk/7KNuP2bAJT4LQKu+1kpIv1ZaAT/eTLy+dkZUP9xA7L0z8Q2/oqhyv1s8ej5RllC+T4MvP35hqz7svyQ/J5FoP9DBMj3//NM+kGhpPi4NNj/gZyk/WQXCvFrHW7/u5QO/ZDEnP/DfLL8gbbK+9JklvwzZPz8mvxW+/+onv/zuMr/SeIs+1CF1P0XR6r2wZIc+4itWP1tx/T5CknM+GRsQvloAmr7HqnK/V3fLviDNaj/pOE69GqRNPznKhb2bthY/Ub8BPzzyN7/08vA+PZdEP24mI79nc4Q9GRp3P9Qr+L1by3i+N5m/vsI3ID+r5i0/iNeKvuPJLT38bne/Yxc8voy+Ob8w6Cc/rfgcPwprSb/2mJm9wF1hvqhxdT8N8Tc+ku//vsZ0Qz+u4s4+JdAZP8ZpNT2mB06/LQtCvyGB1T3ABiM/LB1ePl6l1r234nm/eBSNPl4EIT8k7ju/mMxLP/pcfz6cSg+/tKTWvda6JT+13kK/4bgZP540TD9vyKM9KyhDPoSwez8IQWQ8V4wiP6DKur6FKi0/rXUMv3DWNz8IBN6+/WHhvuyAiT7n3Fk/4Lm9PsaNkj4x3GO/kesbP3Ma8z5wqiS/g+ihvbAier8xE0i+NipTP1Sj1r58gsA+IgOmPZaYar/WfsQ+zSsLv33UZb6gB1C/5a9zPwjARD7en3Y+qvYOP1E2OzxeQlM/mf7SPkS4Dr/DFzc/BNZ0Py7tlr7bnLU8JSwdPlyjDr9pIFK/mZ9uv01EST4H2ZY+RBkKvyyqDr81jR8/mBAGv/7YCL9UkCq/1UQTv2zgMr6U0Uo/7GBXP0NKfj6s5/Q+b1ZGvySMEr/eMYi+t7v4PFF3pT6qo3O/vI0FPupIIb8jZUI/cvmsvruMuj5Mg1+/l6XfPgDqYr9zPxQ+OA2JvaIWDT9NwFM/kM4Rv9zzTr8x3A6+n/SQvsVtk70MUHM/IpqXvg7Uar90rIe+fxdXvz2tg74S1O8+RGbRPC96br67bnc/pVqQvcDYXj+Ax/c+6lDNvqRhXz+XgZK+k1z9vjJsED82jiq/sUdcv7K5er2dGAK/FBgfv8h4J7+xKd2+/U3XPvAvYr/mCla+YBDFvvz4Rr+G1/++bJ7vPUJ/Yj8CTOu+jdSGvlJDdb9yfbo9Lm4RP2td176ClDa/vcytvpyQVr8kz9U+rB6AvgZLUj+75wS/8amgPhY6YT/HhLY+6LJMv1LRGL+z0jK8w7F5v/rBKb1jVVu+lvxkv8Oaz74MHDA+n2mwPiK7yT4BGFk/dPf6PpDOTD/2pra+D3CZvtz2vz7tj1c/nLDQvgXk4z4pJEQ/puEOv+JfCD/jkxk/LBQhv/aXET/C9/o+DAlAvwiaGj/Qpjc+IQZFv260Gz/4fPs9FLVHvzA8Gj/gFHQ9"
+        }
+      ]
+    },
+    "aa5fbd6ec0654417bba851ede210150a": {
+      "model_name": "MeshStandardMaterialModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "alphaMap": null,
+        "aoMap": null,
+        "bumpMap": null,
+        "clippingPlanes": [],
+        "defines": {
+          "STANDARD": ""
+        },
+        "displacementMap": null,
+        "emissiveMap": null,
+        "envMap": null,
+        "flatShading": true,
+        "lightMap": null,
+        "map": null,
+        "metalness": 0.25,
+        "metalnessMap": null,
+        "normalMap": null,
+        "normalScale": [
+          1.0,
+          1.0
+        ],
+        "polygonOffset": true,
+        "polygonOffsetFactor": 1.0,
+        "polygonOffsetUnits": 5.0,
+        "roughnessMap": null,
+        "side": "DoubleSide",
+        "vertexColors": "VertexColors"
+      }
+    },
+    "bb0cd0ca7b894bd3bd6bbc682c04ab6b": {
+      "model_name": "WebGLShadowMapModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {}
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "82d246021332449b942bb89f7e0240f7"}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1431 @@
+<html>
+<body>
+
+
+<!-- Load require.js. Delete this if your page already loads require.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js" crossorigin="anonymous"></script>
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "5d08fadfaee4443ead674afea35d4133": {
+      "model_name": "RendererModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "_antialias": true,
+        "_dom_classes": [],
+        "_height": 400,
+        "_width": 400,
+        "camera": "IPY_MODEL_dde7f8c5309e4c0ca0e8889837625595",
+        "clippingPlanes": [],
+        "controls": [
+          "IPY_MODEL_bd31c64b5fe24795adfaf7a3daeba1b6"
+        ],
+        "layout": "IPY_MODEL_35d0b11e783848c7a3d33af2fe2aefb4",
+        "scene": "IPY_MODEL_92285f63f7ea4bc0a27fde6fde5c6f0e",
+        "shadowMap": "IPY_MODEL_46e41e2d2ad34c37a64e0806e7a8fd3a"
+      }
+    },
+    "dde7f8c5309e4c0ca0e8889837625595": {
+      "model_name": "PerspectiveCameraModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [
+          "IPY_MODEL_d0ad331c1bef408484bec932d22741b8"
+        ],
+        "fov": 30.0,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorldInverse": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          5.108925379827852
+        ],
+        "projectionMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "d0ad331c1bef408484bec932d22741b8": {
+      "model_name": "DirectionalLightModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [],
+        "color": "white",
+        "intensity": 0.6,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          5.108925379827852
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shadow": "uninitialized",
+        "target": "uninitialized",
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "bd31c64b5fe24795adfaf7a3daeba1b6": {
+      "model_name": "OrbitControlsModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "controlling": "IPY_MODEL_dde7f8c5309e4c0ca0e8889837625595",
+        "target": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maxAzimuthAngle": "inf",
+        "maxDistance": "inf",
+        "maxZoom": "inf",
+        "minAzimuthAngle": "-inf"
+      }
+    },
+    "35d0b11e783848c7a3d33af2fe2aefb4": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "92285f63f7ea4bc0a27fde6fde5c6f0e": {
+      "model_name": "SceneModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [
+          "IPY_MODEL_dde7f8c5309e4c0ca0e8889837625595",
+          "IPY_MODEL_76430a94b5d34cdf895c392f406776fe",
+          "IPY_MODEL_acd29a0a7ad54549a8514ed385bd07fb"
+        ],
+        "fog": null,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "overrideMaterial": null,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "76430a94b5d34cdf895c392f406776fe": {
+      "model_name": "AmbientLightModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [],
+        "intensity": 0.5,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "acd29a0a7ad54549a8514ed385bd07fb": {
+      "model_name": "MeshModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [],
+        "geometry": "IPY_MODEL_01fa3f5f4d284f6084ae832b02251a38",
+        "material": "IPY_MODEL_bfeb2cf8632d42869a3e423328a65cdb",
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "morphTargetInfluences": [],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "01fa3f5f4d284f6084ae832b02251a38": {
+      "model_name": "BufferGeometryModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "_ref_geometry": null,
+        "attributes": {
+          "color": "IPY_MODEL_86cca7d3f75d406e8aee2b3347e7cb9d",
+          "position": "IPY_MODEL_afb9a4546d2e417f99f5463afa51aa68"
+        },
+        "index": null,
+        "morphAttributes": {},
+        "userData": {}
+      }
+    },
+    "86cca7d3f75d406e8aee2b3347e7cb9d": {
+      "model_name": "BufferAttributeModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "array": {
+          "shape": [
+            588,
+            3
+          ],
+          "dtype": "float32"
+        },
+        "normalized": true
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "array",
+            "buffer"
+          ],
+          "data": "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"
+        }
+      ]
+    },
+    "afb9a4546d2e417f99f5463afa51aa68": {
+      "model_name": "BufferAttributeModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "array": {
+          "shape": [
+            588,
+            3
+          ],
+          "dtype": "float32"
+        }
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "array",
+            "buffer"
+          ],
+          "data": "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"
+        }
+      ]
+    },
+    "bfeb2cf8632d42869a3e423328a65cdb": {
+      "model_name": "MeshStandardMaterialModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "alphaMap": null,
+        "aoMap": null,
+        "bumpMap": null,
+        "clippingPlanes": [],
+        "defines": {
+          "STANDARD": ""
+        },
+        "displacementMap": null,
+        "emissiveMap": null,
+        "envMap": null,
+        "flatShading": true,
+        "lightMap": null,
+        "map": null,
+        "metalness": 0.25,
+        "metalnessMap": null,
+        "normalMap": null,
+        "normalScale": [
+          1.0,
+          1.0
+        ],
+        "polygonOffset": true,
+        "polygonOffsetFactor": 1.0,
+        "polygonOffsetUnits": 5.0,
+        "roughnessMap": null,
+        "side": "DoubleSide",
+        "vertexColors": "FaceColors"
+      }
+    },
+    "46e41e2d2ad34c37a64e0806e7a8fd3a": {
+      "model_name": "WebGLShadowMapModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {}
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "5d08fadfaee4443ead674afea35d4133"}
+</script>
+
+
+<script type="application/vnd.jupyter.widget-state+json">
+{
+  "version_major": 2,
+  "version_minor": 0,
+  "state": {
+    "83b6d977bb3e4ab9a496c4d7ab7946ce": {
+      "model_name": "RendererModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "_antialias": true,
+        "_dom_classes": [],
+        "_height": 400,
+        "_width": 400,
+        "camera": "IPY_MODEL_e18c98568de6437fa8cd1c0243ed7d3b",
+        "clippingPlanes": [],
+        "controls": [
+          "IPY_MODEL_0da16b68ba6949788248edd56723d009"
+        ],
+        "layout": "IPY_MODEL_d6005b3bec504fb1add7de8963931ea7",
+        "scene": "IPY_MODEL_4dcda3fb27c74847bfe57c35ec15ae52",
+        "shadowMap": "IPY_MODEL_65d641e197434b6099e01220d260c6bc"
+      }
+    },
+    "e18c98568de6437fa8cd1c0243ed7d3b": {
+      "model_name": "PerspectiveCameraModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [
+          "IPY_MODEL_ec11aaab068541ff95fd9e69958dbf49"
+        ],
+        "fov": 30.0,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorldInverse": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          5.108925379827852
+        ],
+        "projectionMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "ec11aaab068541ff95fd9e69958dbf49": {
+      "model_name": "DirectionalLightModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [],
+        "color": "white",
+        "intensity": 0.6,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          5.108925379827852
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "shadow": "uninitialized",
+        "target": "uninitialized",
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "0da16b68ba6949788248edd56723d009": {
+      "model_name": "OrbitControlsModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "controlling": "IPY_MODEL_e18c98568de6437fa8cd1c0243ed7d3b",
+        "target": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maxAzimuthAngle": "inf",
+        "maxDistance": "inf",
+        "maxZoom": "inf",
+        "minAzimuthAngle": "-inf"
+      }
+    },
+    "d6005b3bec504fb1add7de8963931ea7": {
+      "model_name": "LayoutModel",
+      "model_module": "@jupyter-widgets/base",
+      "model_module_version": "1.2.0",
+      "state": {}
+    },
+    "4dcda3fb27c74847bfe57c35ec15ae52": {
+      "model_name": "SceneModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [
+          "IPY_MODEL_e18c98568de6437fa8cd1c0243ed7d3b",
+          "IPY_MODEL_3ae1298e36f54f40b799369126e8dee2",
+          "IPY_MODEL_51032fd186f9408da880745a735f33f3"
+        ],
+        "fog": null,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "overrideMaterial": null,
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "3ae1298e36f54f40b799369126e8dee2": {
+      "model_name": "AmbientLightModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [],
+        "intensity": 0.5,
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "51032fd186f9408da880745a735f33f3": {
+      "model_name": "MeshModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "children": [],
+        "geometry": "IPY_MODEL_d99814ddc3284193bf2df6e9e8333ea5",
+        "material": "IPY_MODEL_d13b3c481a384a8180f5bf00d89d7003",
+        "matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "matrixWorld": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "modelViewMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "morphTargetInfluences": [],
+        "normalMatrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "position": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0,
+          "XYZ"
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "d99814ddc3284193bf2df6e9e8333ea5": {
+      "model_name": "BufferGeometryModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "_ref_geometry": null,
+        "attributes": {
+          "color": "IPY_MODEL_c4de0fd571ac430fba9ae51e5cd5a8f2",
+          "position": "IPY_MODEL_f6c23ac017d74bdb9ef6a5b03ee42b55"
+        },
+        "index": null,
+        "morphAttributes": {},
+        "userData": {}
+      }
+    },
+    "c4de0fd571ac430fba9ae51e5cd5a8f2": {
+      "model_name": "BufferAttributeModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "array": {
+          "shape": [
+            762,
+            3
+          ],
+          "dtype": "float32"
+        },
+        "normalized": true
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "array",
+            "buffer"
+          ],
+          "data": "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"
+        }
+      ]
+    },
+    "f6c23ac017d74bdb9ef6a5b03ee42b55": {
+      "model_name": "BufferAttributeModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "array": {
+          "shape": [
+            762,
+            3
+          ],
+          "dtype": "float32"
+        }
+      },
+      "buffers": [
+        {
+          "encoding": "base64",
+          "path": [
+            "array",
+            "buffer"
+          ],
+          "data": "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"
+        }
+      ]
+    },
+    "d13b3c481a384a8180f5bf00d89d7003": {
+      "model_name": "MeshStandardMaterialModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {
+        "alphaMap": null,
+        "aoMap": null,
+        "bumpMap": null,
+        "clippingPlanes": [],
+        "defines": {
+          "STANDARD": ""
+        },
+        "displacementMap": null,
+        "emissiveMap": null,
+        "envMap": null,
+        "flatShading": true,
+        "lightMap": null,
+        "map": null,
+        "metalness": 0.25,
+        "metalnessMap": null,
+        "normalMap": null,
+        "normalScale": [
+          1.0,
+          1.0
+        ],
+        "polygonOffset": true,
+        "polygonOffsetFactor": 1.0,
+        "polygonOffsetUnits": 5.0,
+        "roughnessMap": null,
+        "side": "DoubleSide",
+        "vertexColors": "FaceColors"
+      }
+    },
+    "65d641e197434b6099e01220d260c6bc": {
+      "model_name": "WebGLShadowMapModel",
+      "model_module": "jupyter-threejs",
+      "model_module_version": "^2.1.0",
+      "state": {}
+    }
+  }
+}
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "83b6d977bb3e4ab9a496c4d7ab7946ce"}
+</script>
+
+</body>
+</html>
