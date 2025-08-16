@@ -44,8 +44,8 @@ var GENDER;
 // Body Parameters
 var numParams = 8;
 var arrayParamNames = ['Bust', 'Under Bust', 'Waist', 'Hip', 'Neck Girth', 'Inside Leg', 'Shoulder', 'Body Height'];
-var arrayParamsMinMax = [[ 79.0,  70.0,  52.0,  79.0,  29.0,  65.0,  29.0, 145.0],
-                         [113.0, 101.0, 113.0, 121.0,  45.0,  95.0,  60.0, 201.0]];
+var arrayParamsMinMax = [[ 0.0,  0.0,  0.0,  0.0,  0.0,  0.0,  0.0, 0.0],
+                         [10000.0, 10000.0, 10000.0, 10000.0,  10000.0,  10000.0,  10000.0, 10000.0]];
 var arrayParamsDefaultF = [90.4, 80.6, 80.2, 98.3, 33.4, 76.3, 36.6, 168.0];
 var arrayParamsDefaultM = [90.6, 86.7, 81.2, 95.2, 38.5, 77.1, 37.7, 174.0];
 var arrayParams = arrayParamsDefaultF.slice(0); // slice for deep copy
